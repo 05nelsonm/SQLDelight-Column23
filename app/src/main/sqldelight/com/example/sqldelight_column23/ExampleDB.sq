@@ -1,0 +1,224 @@
+import com.example.sqldelight_column23.Column22Id;
+import com.example.sqldelight_column23.Column23Id;
+
+CREATE TABLE column22(
+    id              INTEGER             AS Column22Id NOT NULL PRIMARY KEY,
+    field1          TEXT                NOT NULL,
+    field2          TEXT                ,
+    field3          TEXT                ,
+    field4          INTEGER             ,
+    field5          TEXT                ,
+    field6          TEXT                ,
+    field7          INTEGER             NOT NULL,
+    field8          TEXT                NOT NULL,
+    field9          TEXT                NOT NULL,
+    field10         TEXT                NOT NULL,
+    field11         TEXT                NOT NULL,
+    field12         INTEGER             NOT NULL,
+    field13         TEXT                NOT NULL,
+    field14         TEXT                ,
+    field15         INTEGER                ,
+    field16         TEXT                ,
+    field17         TEXT                ,
+    field18         TEXT                ,
+    field19         TEXT                NOT NULL,
+    field20         TEXT                NOT NULL,
+    field21         TEXT                NOT NULL
+);
+
+column22GetAll:
+SELECT *
+FROM column22;
+
+column22GetById:
+SELECT *
+FROM column22
+WHERE id = ?;
+
+column22Upsert {
+    UPDATE column22
+    SET field1 = :field1,
+        field2 = :field2,
+        field3 = :field3,
+        field4 = :field4,
+        field5 = :field5,
+        field6 = :field6,
+        field7 = :field7,
+        field8 = :field8,
+        field9 = :field9,
+        field10 = :field10,
+        field11 = :field11,
+        field12 = :field12,
+        field13 = :field13,
+        field14 = :field14,
+        field15 = :field15,
+        field16 = :field16,
+        field17 = :field17,
+        field18 = :field18,
+        field19 = :field19,
+        field20 = :field20,
+        field21 = :field21
+    WHERE id = :id;
+
+    INSERT OR IGNORE INTO column22(
+        id,
+        field1,
+        field2,
+        field3,
+        field4,
+        field5,
+        field6,
+        field7,
+        field8,
+        field9,
+        field10,
+        field11,
+        field12,
+        field13,
+        field14,
+        field15,
+        field16,
+        field17,
+        field18,
+        field19,
+        field20,
+        field21
+    )
+    VALUES (
+        :id,
+        :field1,
+        :field2,
+        :field3,
+        :field4,
+        :field5,
+        :field6,
+        :field7,
+        :field8,
+        :field9,
+        :field10,
+        :field11,
+        :field12,
+        :field13,
+        :field14,
+        :field15,
+        :field16,
+        :field17,
+        :field18,
+        :field19,
+        :field20,
+        :field21
+    );
+}
+
+CREATE TABLE column23(
+    id              INTEGER             AS Column23Id NOT NULL PRIMARY KEY,
+    field1          TEXT                NOT NULL,
+    field2          TEXT                ,
+    field3          TEXT                ,
+    field4          INTEGER             ,
+    field5          TEXT                ,
+    field6          TEXT                ,
+    field7          INTEGER             NOT NULL,
+    field8          TEXT                NOT NULL,
+    field9          TEXT                NOT NULL,
+    field10         TEXT                NOT NULL,
+    field11         TEXT                NOT NULL,
+    field12         INTEGER             NOT NULL,
+    field13         TEXT                NOT NULL,
+    field14         TEXT                ,
+    field15         INTEGER                ,
+    field16         TEXT                ,
+    field17         TEXT                ,
+    field18         TEXT                ,
+    field19         TEXT                NOT NULL,
+    field20         TEXT                NOT NULL,
+    field21         TEXT                ,
+    field22         INTEGER             NOT NULL
+);
+
+column23GetAll:
+SELECT *
+FROM column23;
+
+column23GetById:
+SELECT *
+FROM column23
+WHERE id = ?;
+
+column23Upsert {
+    UPDATE column23
+    SET field1 = :field1,
+        field2 = :field2,
+        field3 = :field3,
+        field4 = :field4,
+        field5 = :field5,
+        field6 = :field6,
+        field7 = :field7,
+        field8 = :field8,
+        field9 = :field9,
+        field10 = :field10,
+        field11 = :field11,
+        field12 = :field12,
+        field13 = :field13,
+        field14 = :field14,
+        field15 = :field15,
+        field16 = :field16,
+        field17 = :field17,
+        field18 = :field18,
+        field19 = :field19,
+        field20 = :field20,
+        field21 = :field21,
+        field22 = :field22
+    WHERE id = :id;
+
+    INSERT OR IGNORE INTO column23(
+        id,
+        field1,
+        field2,
+        field3,
+        field4,
+        field5,
+        field6,
+        field7,
+        field8,
+        field9,
+        field10,
+        field11,
+        field12,
+        field13,
+        field14,
+        field15,
+        field16,
+        field17,
+        field18,
+        field19,
+        field20,
+        field21,
+        field22
+    )
+    VALUES (
+        :id,
+        :field1,
+        :field2,
+        :field3,
+        :field4,
+        :field5,
+        :field6,
+        :field7,
+        :field8,
+        :field9,
+        :field10,
+        :field11,
+        :field12,
+        :field13,
+        :field14,
+        :field15,
+        :field16,
+        :field17,
+        :field18,
+        :field19,
+        :field20,
+        :field21,
+        :field22
+    );
+}
